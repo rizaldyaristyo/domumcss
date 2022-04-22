@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>domumCSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body style="margin: 20px">
+    <div align="center">
+      <div>
+        <text class="d1" style="margin-right: -9px"> "domumCSS"</text>
+        - tenebrisV1.0 -
+      </div>
+      <p>
+        Sharing ease of dark <br />
+        The workaround that we need,<br />
+        but not the one that we deserve<br />
+        Designed to the minimal,<br />
+        yet essential to the core<br />
+        That is, what define as "Home"
+      </p>
+    </div>
+    <div class="alignCenter" style="margin-bottom: 50px; margin-top: 5rem">
+      <h2>● Deployment</h2>
+      <p>
+        <b>- domumCSS via cdn -</b><br />
+        &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css&quot; /&gt;<br />
+        &nbsp;&nbsp;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
+        <br /><b>- FontAwesome via <a href="https://cdnjs.com/libraries/font-awesome/4.7.0" style="color: white">cdnjs</a> (or whatever cdn you're using) -</b><br />
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;<br />
+        <br /><i style="color: grey">and this script in the end if using on scroll animation</i><br />
+        <i style="color: grey"> &lt;script&gt; initanima(); &lt;/script&gt;<br /> </i>
+      </p>
+    </div>
+
+    <div style="text-align: center; margin-top: 5rem">
+      <h2>● Top Navigation Bar (navbar)</h2>
+      <div>
+        <h3>With Logo</h3>
+        <div class="navbar" id="navBar" style="max-width: 800px; margin: auto">
+          <a href="#"><img src="set-your-image-url-here" alt="ΔΣπίτι" /></a>
+          <a href="#" class="active">Home</a>
+          <a href="#">Menu 2</a>
+          <a href="#">Menu 3</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#">Menu 4</a>
+          <a href="javascript:topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
+        </div>
+      </div>
+
+      <div style="margin: 25px">
+        <script async="async">
+          function copysnippet1() {
+            var copyText = document.getElementById("snippet1");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+          }
+        </script>
+        <input
+          type="text"
+          id="snippet1"
+          value='&lt;div class="navbar" id="navBar"&gt;
+        &lt;a href="#"&gt;&lt;img src="" alt="&Delta;&Sigma;&pi;ί&tau;&iota;" /&gt;&lt;/a&gt;
+        &lt;a href="#" class="active"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;Menu 2&lt;/a&gt;
+        &lt;a href="#"&gt;Menu 3&lt;/a&gt;
+        &lt;div class="dropdown"&gt;
+          &lt;button class="dropbtn"&gt;Dropdown &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt; &lt;a href="#"&gt;Link 2&lt;/a&gt; &lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a href="#"&gt;Menu 4&lt;/a&gt; &lt;a href="javascript:topnavbar();" style="font-size: 15px" class="icon"&gt;&amp;#9776;&lt;/a&gt;
+      &lt;/div&gt;'
+          readonly="readonly"
+          style="visibility: hidden; max-width: 0px"
+        />
+        <button onclick="copysnippet1()">Copy Snippet to Clipboard</button>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <div style="margin-left: 5px">
+        <h3>Without Logo</h3>
+        <div class="navbar" id="navBar" style="max-width: 800px; margin: auto">
+          <a href="#" class="active">Home</a>
+          <a href="#">Menu 2</a>
+          <a href="#">Menu 3</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#">Menu 4</a>
+          <a href="javascript:topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
+        </div>
+      </div>
+
+      <div style="margin: 25px">
+        <script async="async">
+          function copysnippet2() {
+            var copyText = document.getElementById("snippet2");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+          }
+        </script>
+        <input
+          type="text"
+          id="snippet2"
+          value='&lt;div class="navbar" id="navBar"&gt;
+        &lt;a href="#" class="active"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;Menu 2&lt;/a&gt;
+        &lt;a href="#"&gt;Menu 3&lt;/a&gt;
+        &lt;div class="dropdown"&gt;
+          &lt;button class="dropbtn"&gt;Dropdown &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt; &lt;a href="#"&gt;Link 2&lt;/a&gt; &lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a href="#"&gt;Menu 4&lt;/a&gt; &lt;a href="javascript:topnavbar();" style="font-size: 15px" class="icon"&gt;&amp;#9776;&lt;/a&gt;
+      &lt;/div&gt;'
+          readonly="readonly"
+          style="visibility: hidden; max-width: 0px"
+        />
+        <button onclick="copysnippet2()">Copy Snippet to Clipboard</button>
+      </div>
+    </div>
+
+    <div style="margin-top: 5rem" class="alignCenter">
+      <style>
+        .margin300 {
+          margin-left: 300px;
+          margin-right: 300px;
+        }
+        @media screen and (max-width: 960px) {
+          .margin300 {
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+        }
+      </style>
+      <div class="margin300">
+        <div style="text-align: start">
+          <h2>● Side Bar Layouting</h2>
+          <script async="async">
+            function copysnippet3() {
+              var copyText = document.getElementById("snippet3");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              navigator.clipboard.writeText(copyText.value);
+            }
+          </script>
+          <p>
+            Side Bar and Main Division have to come side by side in order to work <br />
+            The Side Bar is always the smaller one, <u>not to be confused with Sidenav</u>
+            <button onclick="copysnippet3()" style="float: right">Copy SideBar Set Snippet</button>
+            <input
+              type="text"
+              id="snippet3"
+              value='&lt;body class="sideBar"&gt;
+    &lt;div class="leftBar" style="background-color: var(--DVoid)"&gt;
+      &lt;div class="barContent"&gt;
+        &lt;div class="d2"&gt;Lorem ipsum, dolor sit amet consectetur adipisicing.&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="rightBody"&gt;
+      &lt;div class="d2"&gt;Dolor sit amet consectetur adipisicing elit. Quas, ipsum illo. Vitae, consequatur at quo repellat praesentium blanditiis hic nam!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;'
+              style="visibility: hidden"
+            />
+          </p>
+        </div>
+        <iframe src="snippets/sidebar.html" frameborder="0" style="min-height: 300px; max-width: 1280px; width: 100%; height: 100%"></iframe>
+      </div>
+    </div>
+    <div class="margin300" style="text-align: center">
+      <h2 style="margin-top: 5rem">● Frame Borders</h2>
+      <div class="gradientBorder alignCenter">&lt;div class=&quot;gradientBorder&quot;&gt;Gradient Border Frame&lt;/div&gt;</div>
+      <div class="gradientBorderRev alignCenter" style="margin-top: 20px">&lt;div class=&quot;gradientBorderRev&quot; &gt;Gradient Border Frame&lt;/div&gt;</div>
+      <div class="normalBorder alignCenter" style="margin-top: 20px">&lt;div class=&quot;normalBorder&quot; &gt;Gradient Border Frame&lt;/div&gt;</div>
+    </div>
+    <div class="margin300" style="text-align: center">
+      <h2 style="margin-top: 5rem">● Images</h2>
+      <h3>This image is <i>Responsive!</i></h3>
+      <p>
+        Using the <b>class="responsiveImg"</b><br />
+        Remember the border above?<br />
+        Boom! You can frame your favorite picture like this<br />
+        <i>(Photo by <a style="color: white" href="https://unsplash.com/@joshua_j_woroniecki">Joshua Woroniecki</a> via Unsplash)</i>
+      </p>
+      <div class="normalBorder alignCenter" style="margin-top: 20px; border-image: linear-gradient(180deg, var(--DLBlue), yellow, brown) 1">
+        <img
+          src="https://images.unsplash.com/photo-1650159809523-2d79505fe96d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
+          alt="Unsplash"
+          class="responsiveImg"
+          loading="lazy"
+        />
+        <i>
+          &lt;div class=&quot;normalBorder alignCenter&quot; style=&quot;margin-top: 20px; border-image: linear-gradient(180deg, var(--DLBlue), yellow, brown) 1&quot;&gt;<br />
+          &emsp;&lt;img src=&quot;<b>your_image_here</b>&quot; class=&quot;responsiveImg&quot; /&gt; &lt;/div&gt;<br />
+        </i>
+      </div>
+      <img
+        class="banner"
+        src="https://images.unsplash.com/photo-1614850715649-1d0106293bd1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
+        alt="Unsplash"
+        style="margin-top: 20px"
+        loading="lazy"
+      />
+      <p>
+        You can too, create a banner of picture!<br />
+        <i>(Photo by <a style="color: white" href="https://unsplash.com/@gradienta">GRADIENTA</a> via Unsplash)</i>
+      </p>
+    </div>
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● Typography</h2>
+      <p>You can use these classes instead of the conventional h1, h2, h3, etc.</p>
+      <table class="table alignCenter2">
+        <tr>
+          <th>Display</th>
+          <th>Class</th>
+        </tr>
+        <tr>
+          <td class="d0">Hell-'O-World!</td>
+          <td>class=d0</td>
+        </tr>
+        <tr>
+          <td class="d1">Hell-'O-World!</td>
+          <td>class=d1</td>
+        </tr>
+        <tr>
+          <td class="d2">Hell-'O-World!</td>
+          <td>class=d2</td>
+        </tr>
+        <tr>
+          <td class="d3">Hell-'O-World!</td>
+          <td>class=d3</td>
+        </tr>
+        <tr>
+          <td class="d4">Hell-'O-World!</td>
+          <td>class=d4</td>
+        </tr>
+        <tr>
+          <td class="d5">Hell-'O-World!</td>
+          <td>class=d5</td>
+        </tr>
+        <tr>
+          <th colspan="2">Responsive</th>
+        </tr>
+        <tr>
+          <td class="responsiveD0">Hell-'O-World!</td>
+          <td>class=responsiveD0</td>
+        </tr>
+        <tr>
+          <td class="responsiveD1">Hell-'O-World!</td>
+          <td>class=responsiveD1</td>
+        </tr>
+        <tr>
+          <td class="responsiveD2">Hell-'O-World!</td>
+          <td>class=responsiveD2</td>
+        </tr>
+        <tr>
+          <td class="responsiveD3">Hell-'O-World!</td>
+          <td>class=responsiveD3</td>
+        </tr>
+        <tr>
+          <td class="responsiveD4">Hell-'O-World!</td>
+          <td>class=responsiveD4</td>
+        </tr>
+        <tr>
+          <td class="responsiveD5">Hell-'O-World!</td>
+          <td>class=responsiveD5</td>
+        </tr>
+      </table>
+      <h2 style="margin-top: 5rem">● Codes</h2>
+      <p>
+        Look this code block! Sleek right?<br />
+        you can use the <b>class="codeBlock"</b><br />
+        combined with &lt;code&gt;.
+      </p>
+      <code class="codeBlock"> $netstat -lnp | grep 80 </code>
+      <p>
+        Or use the <b>class="codeDiv"</b><br />
+        combined with &lt;div&gt;,<br />
+        so you can specify the size.
+      </p>
+      <div class="codeDiv" style="height: 500px">
+        <blockquote>
+          <font color="green">int</font>&nbsp;main<font color="#008000">&#40;</font><font color="#008000">&#41;</font>&nbsp;<font color="#008000">&#123;</font><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="yellow">printf</font><font color="#008000">&#40;</font><font color="white">&quot;Hell&nbsp;No,&nbsp;World!&quot;</font><font color="#008000">&#41;</font
+          ><font color="#008080">;</font><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">return</font>&nbsp;<font color="#0000dd">0</font><font color="#008080">;</font><br />
+          <font color="#008000">&#125;</font>
+        </blockquote>
+      </div>
+    </div>
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● On Scroll Animation</h2>
+      <p>
+        There's a little fade in animation you can use while scrolling. <br />
+        Just add the <b>class=&quot;reveal&quot;</b> to an image desired. <br />
+        Make sure to include <b>&lt;script&gt; initanima(); &lt;/script&gt;</b> <br />
+        in the end of your code
+      </p>
+      <div class="alignCenter" style="margin-top: 3rem">
+        <img
+          class="reveal responsiveImg"
+          src="https://images.unsplash.com/photo-1618614944895-fc409a83ad80?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
+          alt="Unsplash"
+          style="max-width: 520px"
+          loading="lazy"
+        />
+      </div>
+      <div class="alignCenter reveal">
+        <i>(Photo by <a style="color: white" href="https://unsplash.com/@terrylknox">TERRYLKNOX</a> via Unsplash)</i>
+      </div>
+    </div>
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● Listing</h2>
+      <p>Lists are better formatted with the class <b>class=&quot;list&quot;</b> and <b>class=&quot;descList&quot;</b> to describe the lists.</p>
+      <div style="display: flex">
+        <div></div>
+        <div class="codeDiv" style="width: 400px; padding: 25px">
+          &lt;dl class=&quot;descList&quot;&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 1&lt;/a&gt;&lt;/li&gt;<br />
+          &emsp;&lt;dd&gt;&lt;a href=&quot;#&quot;&gt;Subcat 1.2&lt;/a&gt;&lt;/dd&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 2&lt;/a&gt;&lt;/li&gt;<br />
+          &emsp;&lt;dd&gt;&lt;a href=&quot;#&quot;&gt;Subcat 2.2&lt;/a&gt;&lt;/dd&gt;<br />
+          &lt;/dl&gt;<br />
+          &lt;ul class=&quot;list&quot;&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 3&lt;/a&gt;&lt;/li&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 4&lt;/a&gt;&lt;/li&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 5&lt;/a&gt;&lt;/li&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 6&lt;/a&gt;&lt;/li&gt;<br />
+          &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 7&lt;/a&gt;&lt;/li&gt;<br />
+          &lt;/ul&gt;<br />
+        </div>
+        <div style="margin-top: -5px; margin-left: 25px">
+          <p>The result will be like the following</p>
+          <dl class="descList">
+            <li><a href="#">Category 1</a></li>
+            <dd><a href="#">Subcat 1.2</a></dd>
+            <li><a href="#">Category 2</a></li>
+            <dd><a href="#">Subcat 2.2</a></dd>
+          </dl>
+          <ul class="list">
+            <li><a href="#">Category 3</a></li>
+            <li><a href="#">Category 4</a></li>
+            <li><a href="#">Category 5</a></li>
+            <li><a href="#">Category 6</a></li>
+            <li><a href="#">Category 7</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● Alignment</h2>
+      <p>
+        Alignment has never been so easy. just add <b>class=&quot;alignLeft&quot;</b>, <br />
+        <b>class=&quot;alignCenter&quot;</b>, or <b>class=&quot;alignRight&quot;</b> to a &lt;div&gt; tag
+      </p>
+      <div>
+        <p>
+          See the Dark rectangle in the Right?<br />
+          we made it aligned right with the class! <br />
+          <br />In fact the whole doc up above aligned center with these classes
+        </p>
+        <div class="alignRight" style="background-color: var(--DCod); width: 200px; height: 100px; text-align: center; padding: 10px">
+          Another <s>Trash</s> <br />
+          Made with struggle by <br />
+          <a href="https://github.com/ARSTCreations" style="color: white">ARSTCreations</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
