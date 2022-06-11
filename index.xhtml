@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>domumCSS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css" />
+
+    <link rel="stylesheet" href="domum.css" />
+    <script src="domum.js"></script>
   </head>
   <body style="margin: 20px">
     <div align="center">
@@ -15,14 +20,18 @@
         <text class="d1" style="margin-right: -9px"> "domumCSS"</text>
         - tenebrisV1.0 -
       </div>
-      <p>
-        Sharing ease of dark <br />
-        The workaround that we need,<br />
-        but not the one that we deserve<br />
+      <p class="glow">
+        Sharing the ease of dark <br />
         Designed to the minimal,<br />
-        yet essential to the core<br />
-        That is, what define as "Home"
+        yet essential to the core<br /><br />
+        <!-- The workaround that we need,<br />
+        but not the one that we deserve<br /> -->
       </p>
+      <i style="color: gray">
+        I just love the probability of how you'd probably approach<br />
+        the documentation by having to use the Ctrl+F to search around<br />
+        the doc or just by admiring the features one by one
+      </i>
     </div>
     <div class="alignCenter" style="margin-bottom: 50px; margin-top: 5rem">
       <h2>● Deployment</h2>
@@ -31,10 +40,11 @@
         &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css&quot; /&gt;<br />
         &nbsp;&nbsp;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
         <br /><b>- FontAwesome via <a href="https://cdnjs.com/libraries/font-awesome/4.7.0" style="color: white">cdnjs</a> (or whatever cdn you're using) -</b><br />
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;<br />
-        <br /><i style="color: grey">and this script in the end if using on scroll animation</i><br />
-        <i style="color: grey"> &lt;script&gt; initanima(); &lt;/script&gt;<br /> </i>
+        &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;<br />
+        <br /><i style="color: grey">- and this script in the end if using on scroll animation</i><br />
+        <i style="color: grey"> &nbsp;&nbsp;&lt;script&gt; initanima(); &lt;/script&gt;<br /> </i>
       </p>
+      <h3 class="textAlignCenter">- Once Deployed, your web goes Dark Mode -</h3>
     </div>
 
     <div style="text-align: center; margin-top: 5rem">
@@ -157,7 +167,7 @@
           }
         }
       </style>
-      <div class="margin300">
+      <div>
         <div style="text-align: start">
           <h2>● Side Bar Layouting</h2>
           <script async="async">
@@ -176,15 +186,15 @@
               type="text"
               id="snippet3"
               value='&lt;body class="sideBar"&gt;
-    &lt;div class="leftBar" style="background-color: var(--DVoid)"&gt;
-      &lt;div class="barContent"&gt;
-        &lt;div class="d2"&gt;Lorem ipsum, dolor sit amet consectetur adipisicing.&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="rightBody"&gt;
-      &lt;div class="d2"&gt;Dolor sit amet consectetur adipisicing elit. Quas, ipsum illo. Vitae, consequatur at quo repellat praesentium blanditiis hic nam!&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;'
+                      &lt;div class="leftBar" style="background-color: var(--DVoid)"&gt;
+                      &lt;div class="barContent"&gt;
+                      &lt;div class="d2"&gt;Lorem ipsum, dolor sit amet consectetur adipisicing.&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="rightBody"&gt;
+                      &lt;div class="d2"&gt;Dolor sit amet consectetur adipisicing elit. Quas, ipsum illo. Vitae, consequatur at quo repellat praesentium blanditiis hic nam!&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/body&gt;'
               style="visibility: hidden"
             />
           </p>
@@ -197,12 +207,12 @@
       <div class="gradientBorder alignCenter">&lt;div class=&quot;gradientBorder&quot;&gt;Gradient Border Frame&lt;/div&gt;</div>
       <div class="gradientBorderRev alignCenter" style="margin-top: 20px">&lt;div class=&quot;gradientBorderRev&quot; &gt;Gradient Border Frame&lt;/div&gt;</div>
       <div class="normalBorder alignCenter" style="margin-top: 20px">&lt;div class=&quot;normalBorder&quot; &gt;Gradient Border Frame&lt;/div&gt;</div>
+      <p style="color: gray; font-style: italic">you can always override the colors of the border by using the border-color property</p>
     </div>
     <div class="margin300" style="text-align: center">
       <h2 style="margin-top: 5rem">● Images</h2>
-      <h3>This image is <i>Responsive!</i></h3>
+      <h3>This image is <i>Responsive!</i> by Using the <b>class="responsiveImg"</b></h3>
       <p>
-        Using the <b>class="responsiveImg"</b><br />
         Remember the border above?<br />
         Boom! You can frame your favorite picture like this<br />
         <i>(Photo by <a style="color: white" href="https://unsplash.com/@joshua_j_woroniecki">Joshua Woroniecki</a> via Unsplash)</i>
@@ -226,10 +236,13 @@
         style="margin-top: 20px"
         loading="lazy"
       />
-      <p>
-        You can too, create a banner of picture!<br />
-        <i>(Photo by <a style="color: white" href="https://unsplash.com/@gradienta">GRADIENTA</a> via Unsplash)</i>
-      </p>
+      <div>
+        <p>
+          You can too, create a banner of a picture!<br />
+          <i>(Photo by <a style="color: white" href="https://unsplash.com/@gradienta">GRADIENTA</a> via Unsplash)</i><br />
+        </p>
+        <div class="normalBorder alignCenter">&lt;img class=&quot;banner&quot; src=&quot;you_image_here&quot;&gt;</div>
+      </div>
     </div>
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Typography</h2>
@@ -267,28 +280,28 @@
           <th colspan="2">Responsive</th>
         </tr>
         <tr>
-          <td class="responsiveD0">Hell-'O-World!</td>
-          <td>class=responsiveD0</td>
+          <td class="R0">Hell-'O-World!</td>
+          <td>class=R0</td>
         </tr>
         <tr>
-          <td class="responsiveD1">Hell-'O-World!</td>
-          <td>class=responsiveD1</td>
+          <td class="R1">Hell-'O-World!</td>
+          <td>class=R1</td>
         </tr>
         <tr>
-          <td class="responsiveD2">Hell-'O-World!</td>
-          <td>class=responsiveD2</td>
+          <td class="R2">Hell-'O-World!</td>
+          <td>class=R2</td>
         </tr>
         <tr>
-          <td class="responsiveD3">Hell-'O-World!</td>
-          <td>class=responsiveD3</td>
+          <td class="R3">Hell-'O-World!</td>
+          <td>class=R3</td>
         </tr>
         <tr>
-          <td class="responsiveD4">Hell-'O-World!</td>
-          <td>class=responsiveD4</td>
+          <td class="R4">Hell-'O-World!</td>
+          <td>class=R4</td>
         </tr>
         <tr>
-          <td class="responsiveD5">Hell-'O-World!</td>
-          <td>class=responsiveD5</td>
+          <td class="R5">Hell-'O-World!</td>
+          <td>class=R5</td>
         </tr>
       </table>
       <h2 style="margin-top: 5rem">● Codes</h2>
@@ -303,14 +316,38 @@
         combined with &lt;div&gt;,<br />
         so you can specify the size.
       </p>
-      <div class="codeDiv" style="height: 500px">
-        <blockquote>
-          <font color="green">int</font>&nbsp;main<font color="#008000">&#40;</font><font color="#008000">&#41;</font>&nbsp;<font color="#008000">&#123;</font><br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="yellow">printf</font><font color="#008000">&#40;</font><font color="white">&quot;Hell&nbsp;No,&nbsp;World!&quot;</font><font color="#008000">&#41;</font
-          ><font color="#008080">;</font><br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">return</font>&nbsp;<font color="#0000dd">0</font><font color="#008080">;</font><br />
-          <font color="#008000">&#125;</font>
-        </blockquote>
+      <div class="codeDiv" style="height: fit-content; width: fit-content">
+        $> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi aspernatur praesentium, unde nesciunt quis laudantium laborum necessitatibus provident ea sint eveniet expedita repellendus aliquid. Officia at in voluptatum tempora
+        culpa distinctio atque eius, blanditiis laboriosam,
+        <mark
+          >ipsum quas repellendus nihil esse nesciunt maiores odit! Ab illo dicta nemo vero quod officia officiis sed repellat saepe necessitatibus iusto, exercitationem et nulla corporis molestiae laudantium earum. Earum maxime ad numquam,
+          dolorum similique eius eum officiis repellat modi nobis cupiditate sapiente quam saepe. Autem mollitia soluta velit esse neque nihil provident sunt corporis labore laboriosam ipsa consectetur, iure doloribus et eveniet molestiae
+          nostrum assumenda qui natus ipsam? Esse quos excepturi minima maxime, saepe molestias error.</mark
+        >
+        Molestias sapiente dolorem dolor perspiciatis, asperiores quas porro dignissimos non fugit. Quo voluptates, magnam delectus cum explicabo perferendis saepe pariatur, rerum asperiores repellendus commodi ea quidem debitis reiciendis
+        atque doloremque beatae non veritatis magni numquam, natus aliquid iusto. Esse sint quod nobis assumenda magnam consequuntur vitae, ipsa earum et, soluta veniam. Saepe est magni minus porro soluta quos, iusto neque commodi fugiat
+        vel non voluptatem laborum, atque ex. Vero at rerum repellat quia minus nemo veniam nihil repudiandae optio voluptatibus in consequuntur atque, facere qui nostrum, ipsum illo non omnis et pariatur. Corrupti ea veritatis nemo aliquam
+        tempora numquam natus unde, optio eaque iusto recusandae omnis ut praesentium velit exercitationem necessitatibus quidem maiores, et sequi! Harum, tenetur, eligendi dolorem, ea numquam rerum deleniti culpa minus assumenda
+        consectetur sed eius atque dolores architecto aliquam quaerat eum quia accusantium ipsam ut reprehenderit facere fuga repellat. Ab asperiores veritatis magni iure et saepe hic optio eligendi ut quidem quod exercitationem minima
+        officia nam officiis possimus eaque facilis, illum quibusdam amet! Facere molestiae a error esse, beatae quasi doloremque assumenda est tempore quo tempora sit labore sequi! Et tenetur obcaecati libero quos ab!_
+      </div>
+    </div>
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● Colored Markings</h2>
+      <p>
+        You want to highlight a section of text like above? <br />
+        Try &lt;mark&gt; tag, comes with 4 highlighting colors classes
+      </p>
+      <div>
+        <mark class="limeMarker">&nbsp;limeMarker&nbsp;</mark>, <mark class="redMarker">&nbsp;redMarker&nbsp;</mark>, <mark class="greenMarker">&nbsp;greenMarker&nbsp;</mark>
+        <mark class="pinkMarker">&nbsp;pinkMarker&nbsp;</mark>
+      </div>
+      <div>
+        ,<mark class="limeSMarker">&nbsp;limeSMarker&nbsp;</mark>, <mark class="redSMarker">&nbsp;redSMarker&nbsp;</mark>, <mark class="greenSMarker">&nbsp;greenSMarker&nbsp;</mark>, and
+        <mark class="pinkSMarker">&nbsp;pinkSMarker!&nbsp;</mark>
+      </div>
+      <div style="margin-top: 8px">
+        <i style="color: gray">info: the 'S' stands for 'Soft'</i>
       </div>
     </div>
     <div class="margin300">
@@ -382,14 +419,20 @@
         <p>
           See the Dark rectangle in the Right?<br />
           we made it aligned right with the class! <br />
-          <br />In fact the whole doc up above aligned center with these classes
         </p>
-        <div class="alignRight" style="background-color: var(--DCod); width: 200px; height: 100px; text-align: center; padding: 10px">
-          Another <s>Trash</s> <br />
-          Made with struggle by <br />
-          <a href="https://github.com/ARSTCreations" style="color: white">ARSTCreations</a>
-        </div>
       </div>
+    </div>
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● Cutout</h2>
+      <div>
+        <img src="" alt="" />
+        <h1 class="cutout d0">HELLOOO</h1>
+      </div>
+    </div>
+    <div class="alignRight margin300" style="background-color: var(--DCod); width: 200px; height: 100px; text-align: center; padding: 10px">
+      Another <s>Trash</s> <br />
+      Made in struggle by <br />
+      <a href="https://github.com/ARSTCreations" style="color: white">ARSTCreations</a>
     </div>
   </body>
 </html>
