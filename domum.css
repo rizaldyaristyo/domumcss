@@ -1,18 +1,17 @@
 /* COLORS */
-* {
-  --DVoid: #0c080a;
-  --DCod: #181818;
-  --DNero: #440000;
-  --DGray: #212121;
-  --DCastro: #4c0027;
-  --DMagenta: #1a1a40;
-  --DRed: #3d3d3d;
-  --DBlue: #270082;
-  --DLBlue: #7a0bc0;
-  --DLGray: #aaaaaa;
-  --DLPink: #fa58b6;
-  --DWhite: #ffffff;
-}
+/* --DVoid: #0c080a;
+--DCod: #181818;
+--DNero: #440000;
+--DGray: #212121;
+--DCastro: #4c0027;
+--DMagenta: #1a1a40;
+--DRed: #3d3d3d;
+--DBlue: #270082;
+--DLBlue: #7a0bc0;
+--DLGray: #aaaaaa;
+--DLPink: #fa58b6;
+--DBone: #e3dac9;
+--DWhite: #ffffff; */
 
 /* THEMING
 .darkMode{
@@ -343,7 +342,19 @@ mark {
   color: #0c080a;
   background: rgba(255, 192, 203, 0.5);
 }
-.cutout {
+.cutout,
+.lightCutout {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  width: fit-content;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  mix-blend-mode: screen;
+}
+.darkCutout {
   background-color: black;
   color: white;
   font-weight: bold;
@@ -353,6 +364,12 @@ mark {
   top: 50%;
   left: 50%;
   mix-blend-mode: multiply;
+}
+.cutoutImg {
+  background-size: cover;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
 }
 .d0 {
   font-size: 40pt;
@@ -420,7 +437,7 @@ mark {
   text-decoration: none;
 }
 .descList {
-  margin-left: 20px;
+  margin-left: 3px;
   margin-top: -5px;
 }
 .descList dt,
@@ -433,12 +450,24 @@ mark {
   color: white;
   text-decoration: none;
 }
-li {
+.descList li a,
+.descList dd a {
+  padding-inline-start: 1ch;
+}
+.descList li {
+  display: list-item;
+  list-style-type: "⫸";
+}
+.descList dd {
+  display: list-item;
+  list-style-type: "⪢";
+}
+.list li {
   display: list-item;
   list-style-type: "⫸";
   padding-inline-start: 1ch;
 }
-dd {
+.list dd {
   display: list-item;
   list-style-type: "⪢";
   padding-inline-start: 0.8ch;
@@ -509,6 +538,101 @@ dd {
 }
 
 /* DECORATIVES */
+.glow10 {
+  text-shadow: 0 0 0.1rem #ffffff;
+}
+.glow20 {
+  text-shadow: 0 0 0.2rem #ffffff;
+}
+.glow30 {
+  text-shadow: 0 0 0.3rem #ffffff;
+}
+.glow40 {
+  text-shadow: 0 0 0.4rem #ffffff;
+}
+.glow50,
 .glow {
   text-shadow: 0 0 0.5rem #ffffff;
+}
+.glow60 {
+  text-shadow: 0 0 0.6rem #ffffff;
+}
+.glow70 {
+  text-shadow: 0 0 0.7rem #ffffff;
+}
+.glow80 {
+  text-shadow: 0 0 0.8rem #ffffff;
+}
+.glow90 {
+  text-shadow: 0 0 0.9rem #ffffff;
+}
+.glow100 {
+  text-shadow: 0 0 1rem #ffffff;
+}
+
+/* BUTTONS */
+.button,
+.lightButton {
+  background-color: #ffffff;
+  border: none;
+  color: #0c080a;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button:hover,
+.lightButton:hover {
+  background-color: #a1a1a1;
+  transition: 0.7s;
+}
+.darkButton {
+  background-color: #0c080a;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.darkButton:hover {
+  background-color: #242424;
+  transition: 0.7s;
+}
+.splashScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0c080a;
+  z-index: 9999;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  opacity: 1;
+  animation: fadeOut 1s ease-out forwards;
+  animation-delay: 1.3s;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.splashScreen * {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
 }
