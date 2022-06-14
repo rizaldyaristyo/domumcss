@@ -2,34 +2,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>domumCSS</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css" />
-
-    <!-- <link rel="stylesheet" href="domum.css" />
-    <script src="domum.js"></script> -->
+    <link rel="stylesheet" href="domum.css" />
   </head>
+  <style>
+    .margin300 {
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+    @media screen and (max-width: 960px) {
+      .margin300 {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  </style>
   <div class="splashScreen">
-    <h1>DomumCSS V1.0</h1>
+    <div>
+      <text class="d1" style="margin-right: -9px"> "domumCSS"</text>
+      - tenebrisV1.1 -
+    </div>
   </div>
   <body style="margin: 20px">
     <div align="center">
       <div>
         <text class="d1" style="margin-right: -9px"> "domumCSS"</text>
-        - tenebrisV1.0 -
+        - tenebrisV1.1 -
       </div>
-      <p class="glow">
-        Sharing the ease of dark <br />
-        Designed to the minimal,<br />
-        yet essential to the core<br /><br />
-        <!-- The workaround that we need,<br />
-        but not the one that we deserve<br /> -->
-      </p>
+      <p class="glow">Sharing the ease of dark</p>
       <i style="color: gray">
         I just love the probability of how you'd probably approach<br />
         the documentation by having to use the Ctrl+F to search around<br />
@@ -37,18 +38,22 @@
       </i>
     </div>
     <!-- Deployment -->
-    <div class="alignCenter" style="margin-bottom: 50px; margin-top: 5rem">
+    <div class="alignCenter2" style="margin-bottom: 50px; margin-top: 1rem">
       <h2>● Deployment</h2>
+      <h3 class="textAlignCenter">- Once Deployed, your web goes Dark Mode -</h3>
       <p>
-        <b>- domumCSS via cdn -</b><br />
+        <br /><b>domumCSS via <a href="" style="color: white">Statically</a> ⚡</b><br /><br />
+        Coming Veeerrryyyy Sooooonnn!! <br />
+        <br /><b>domumCSS via <a href="https://github.com/ARSTCreations/domumcss" style="color: white">GitHub</a> 🐱</b><br /><br />
         &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css&quot; /&gt;<br />
         &nbsp;&nbsp;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
-        <br /><b>- FontAwesome via <a href="https://cdnjs.com/libraries/font-awesome/4.7.0" style="color: white">cdnjs</a> (or whatever cdn you're using) -</b><br />
-        &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; /&gt;<br />
-        <br /><i style="color: grey">- and this script in the end if using on scroll animation</i><br />
-        <i style="color: grey"> &nbsp;&nbsp;&lt;script&gt; initanima(); &lt;/script&gt;<br /> </i>
+        <br /><b><i style="color: white">(Deprecated) </i><strike style="color: gray">domumCSS CDNJSDelivr Convert 🛡 </strike><i style="color: white">&nbsp;(Not Caching)</i></b>
+        <strike style="color: gray">
+          <br /><br />
+          &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css&quot; /&gt;<br />
+          &nbsp;&nbsp;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
+        </strike>
       </p>
-      <h3 class="textAlignCenter">- Once Deployed, your web goes Dark Mode -</h3>
     </div>
 
     <!-- NavBar -->
@@ -57,15 +62,12 @@
       <div>
         <h3>With Logo</h3>
         <div class="navbar" id="navBar" style="max-width: 800px; margin: auto">
-          <a href="#"><img src="set-your-image-url-here" alt="ΔΣπίτι" /></a>
+          <a href="#"><img src="https://raw.githubusercontent.com/ARSTCreations/domumcss/main/thumb.png" alt="domumCSS" style="max-width: 130px" /></a>
           <a href="#" class="active">Home</a>
           <a href="#">Menu 2</a>
           <a href="#">Menu 3</a>
           <div class="dropdown">
-            <button class="dropbtn">
-              Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
+            <button class="dropbtn">Dropdown ▾</button>
             <div class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -76,35 +78,25 @@
           <a href="javascript:topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
         </div>
       </div>
-
-      <div style="margin: 25px">
-        <script async="async">
-          function copysnippet1() {
-            var copyText = document.getElementById("snippet1");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.value);
-          }
-        </script>
-        <input
-          type="text"
-          id="snippet1"
-          value='&lt;div class="navbar" id="navBar"&gt;
-          &lt;a href="#"&gt;&lt;img src="" alt="" /&gt;&lt;/a&gt;
-          &lt;a href="#" class="active"&gt;Home&lt;/a&gt;
-          &lt;a href="#"&gt;Menu 2&lt;/a&gt;
-          &lt;a href="#"&gt;Menu 3&lt;/a&gt;
-          &lt;div class="dropdown"&gt;
-          &lt;button class="dropbtn"&gt;Dropdown &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/button&gt;
-          &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt; &lt;a href="#"&gt;Link 2&lt;/a&gt; &lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/div&gt;
-          &lt;/div&gt;
-          &lt;a href="#"&gt;Menu 4&lt;/a&gt; &lt;a href="javascript:topnavbar();" style="font-size: 15px" class="icon"&gt;&amp;#9776;&lt;/a&gt;
-          &lt;/div&gt;'
-          readonly="readonly"
-          style="visibility: hidden; max-width: 0px"
-        />
-        <button onclick="copysnippet1()">Copy Snippet to Clipboard</button>
-      </div>
+    </div>
+    <br />
+    <div class="codeDiv alignCenter">
+      &lt;div class=&quot;navbar&quot; id=&quot;navBar&quot; style=&quot;max-width: 800px; margin: auto&quot;&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;set-your-image-url-here&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;<br />
+      &nbsp;&lt;div class=&quot;dropdown&quot;&gt;<br />
+      &nbsp;&nbsp;&lt;button class=&quot;dropbtn&quot;&gt; Dropdown ▾ &lt;/button&gt;<br />
+      &nbsp;&nbsp;&lt;div class=&quot;dropdown-content&quot;&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;<br />
+      &nbsp;&nbsp;&lt;/div&gt;<br />
+      &nbsp;&lt;/div&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 4&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;javascript:topnavbar();&quot; style=&quot;font-size: 15px&quot; class=&quot;icon&quot;&gt;&amp;#9776;&lt;/a&gt;<br />
+      &lt;/div&gt;<br />
     </div>
 
     <div style="text-align: center">
@@ -115,10 +107,7 @@
           <a href="#">Menu 2</a>
           <a href="#">Menu 3</a>
           <div class="dropdown">
-            <button class="dropbtn">
-              Dropdown
-              <i class="fa fa-caret-down"></i>
-            </button>
+            <button class="dropbtn">Dropdown ▾</button>
             <div class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -129,124 +118,83 @@
           <a href="javascript:topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
         </div>
       </div>
-
-      <div style="margin: 25px">
-        <script async="async">
-          function copysnippet2() {
-            var copyText = document.getElementById("snippet2");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.value);
-          }
-        </script>
-        <input
-          type="text"
-          id="snippet2"
-          value='&lt;div class="navbar" id="navBar"&gt;
-          &lt;a href="#" class="active"&gt;Home&lt;/a&gt;
-          &lt;a href="#"&gt;Menu 2&lt;/a&gt;
-          &lt;a href="#"&gt;Menu 3&lt;/a&gt;
-          &lt;div class="dropdown"&gt;
-          &lt;button class="dropbtn"&gt;Dropdown &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/button&gt;
-          &lt;div class="dropdown-content"&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt; &lt;a href="#"&gt;Link 2&lt;/a&gt; &lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/div&gt;
-          &lt;/div&gt;
-          &lt;a href="#"&gt;Menu 4&lt;/a&gt; &lt;a href="javascript:topnavbar();" style="font-size: 15px" class="icon"&gt;&amp;#9776;&lt;/a&gt;
-          &lt;/div&gt;'
-          readonly="readonly"
-          style="visibility: hidden; max-width: 0px"
-        />
-        <button onclick="copysnippet2()">Copy Snippet to Clipboard</button>
-      </div>
+    </div>
+    <br />
+    <div class="codeDiv alignCenter">
+      &lt;div class=&quot;navbar&quot; id=&quot;navBar&quot; style=&quot;max-width: 800px; margin: auto&quot;&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;<br />
+      &nbsp;&lt;div class=&quot;dropdown&quot;&gt;<br />
+      &nbsp;&nbsp;&lt;button class=&quot;dropbtn&quot;&gt; Dropdown ▾ &lt;/button&gt;<br />
+      &nbsp;&nbsp;&lt;div class=&quot;dropdown-content&quot;&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;<br />
+      &nbsp;&nbsp;&lt;/div&gt;<br />
+      &nbsp;&lt;/div&gt;<br />
+      &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 4&lt;/a&gt;<br />
+      &nbsp;&lt;a href=&quot;javascript:topnavbar();&quot; style=&quot;font-size: 15px&quot; class=&quot;icon&quot;&gt;&amp;#9776;&lt;/a&gt;<br />
+      &lt;/div&gt;<br />
     </div>
 
     <!-- Sidebar Layouting -->
-    <div style="margin-top: 5rem" class="alignCenter">
-      <style>
-        .margin300 {
-          margin-left: 300px;
-          margin-right: 300px;
-        }
-        @media screen and (max-width: 960px) {
-          .margin300 {
-            margin-left: 0px;
-            margin-right: 0px;
-          }
-        }
-      </style>
+    <div style="margin-top: 5rem" class="alignCenter2">
       <div>
-        <div style="text-align: start">
-          <h2>● Side Bar Layouting</h2>
-          <script async="async">
-            function copysnippet3() {
-              var copyText = document.getElementById("snippet3");
-              copyText.select();
-              copyText.setSelectionRange(0, 99999);
-              navigator.clipboard.writeText(copyText.value);
-            }
-          </script>
-          <p>
-            Side Bar and Main Division have to come side by side in order to work <br />
-            The Side Bar is always the smaller one, <u>not to be confused with Sidenav</u>
-            <button onclick="copysnippet3()" style="float: right">Copy SideBar Set Snippet</button>
-            <input
-              type="text"
-              id="snippet3"
-              value='&lt;body class="sideBar"&gt;
-                      &lt;div class="leftBar" style="background-color: var(--DVoid)"&gt;
-                      &lt;div class="barContent"&gt;
-                      &lt;div class="d2"&gt;Lorem ipsum, dolor sit amet consectetur adipisicing.&lt;/div&gt;
-                      &lt;/div&gt;
-                      &lt;/div&gt;
-                      &lt;div class="rightBody"&gt;
-                      &lt;div class="d2"&gt;Dolor sit amet consectetur adipisicing elit. Quas, ipsum illo. Vitae, consequatur at quo repellat praesentium blanditiis hic nam!&lt;/div&gt;
-                      &lt;/div&gt;
-                      &lt;/body&gt;'
-              style="visibility: hidden"
-            />
-          </p>
-        </div>
-        <iframe src="snippets/sidebar.html" frameborder="0" style="min-height: 300px; max-width: 1280px; width: 100%; height: 100%"></iframe>
+        <h2>● Side Bar Layouting</h2>
+        <p>
+          Side Bar and Main Division have to come side by side in order to work <br />
+          The Side Bar is always the smaller one, <u>not to be confused with Sidenav</u>
+        </p>
+        <iframe src="etcetera/sidebar.html" frameborder="0" style="min-height: 100px; max-width: 720px; width: 100%; height: 100%"></iframe>
       </div>
+    </div>
+    <div class="codeDiv alignCenter">
+      &lt;body class=&quot;sideBar&quot;&gt;<br />
+      &nbsp;&lt;div class=&quot;leftBar&quot; style=&quot;background-color: #0c080a&quot;&gt;<br />
+      &nbsp;&nbsp;&lt;div class=&quot;barContent&quot;&gt;<br />
+      &nbsp;&nbsp;&nbsp;&lt;div class=&quot;d2&quot;&gt;Lorem ipsum, dolor sit amet consectetur adipisicing.&lt;/div&gt;<br />
+      &nbsp;&nbsp;&lt;/div&gt;<br />
+      &nbsp;&lt;/div&gt;<br />
+      &nbsp;&lt;div class=&quot;rightBody&quot; style=&quot;background-color: #3d3d3d&quot;&gt;<br />
+      &nbsp;&nbsp;&lt;div class=&quot;d2&quot;&gt;Dolor sit amet consectetur adipisicing elit.&lt;/div&gt;<br />
+      &nbsp;&lt;/div&gt;<br />
+      &lt;/body&gt;
     </div>
 
     <!-- Frame Border -->
     <div class="margin300" style="text-align: center">
       <h2 style="margin-top: 5rem">● Frame Borders</h2>
-      <div class="gradientBorder alignCenter">&lt;div class=&quot;gradientBorder&quot;&gt;Gradient Border Frame&lt;/div&gt;</div>
-      <div class="gradientBorderRev alignCenter" style="margin-top: 20px">&lt;div class=&quot;gradientBorderRev&quot; &gt;Gradient Border Frame&lt;/div&gt;</div>
-      <div class="normalBorder alignCenter" style="margin-top: 20px">&lt;div class=&quot;normalBorder&quot; &gt;Gradient Border Frame&lt;/div&gt;</div>
+      <div class="gradientBorder alignCenter"><code>&lt;div class=&quot;gradientBorder&quot;&gt;Gradient Border Frame&lt;/div&gt;</code></div>
+      <div class="gradientBorderRev alignCenter" style="margin-top: 20px"><code>&lt;div class=&quot;gradientBorderRev&quot; &gt;Gradient Border Frame&lt;/div&gt;</code></div>
+      <div class="normalBorder alignCenter" style="margin-top: 20px"><code>&lt;div class=&quot;normalBorder&quot; &gt;Gradient Border Frame&lt;/div&gt;</code></div>
       <p style="color: gray; font-style: italic">you can always override the colors of the border by using the border-color property</p>
     </div>
 
     <!-- Responsive Image -->
     <div class="margin300" style="text-align: center">
-      <h2 style="margin-top: 5rem">● Images</h2>
+      <h2 style="margin-top: 5rem">● Responisve Image</h2>
       <h3>
         This image is <i>Responsive!</i> by <br />
         Using the <b>class="responsiveImg"</b><br />Try Resizing your window!
       </h3>
-      <p>
-        Remember the border above?<br />
-        Boom! You can frame your favorite picture like this<br />
-        <i>(Photo by <a style="color: white" href="https://unsplash.com/@joshua_j_woroniecki">Joshua Woroniecki</a> via Unsplash)</i>
-      </p>
-      <div class="normalBorder alignCenter" style="margin-top: 20px; border-image: linear-gradient(180deg, var(--DLBlue), yellow, brown) 1">
+      <div class="alignCenter" style="margin-top: 20px; max-width: 720px">
         <img
           src="https://images.unsplash.com/photo-1650159809523-2d79505fe96d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
           alt="Unsplash"
           class="responsiveImg"
           loading="lazy"
         />
-        <i>
-          &lt;div class=&quot;normalBorder alignCenter&quot; style=&quot;margin-top: 20px; border-image: linear-gradient(180deg, var(--DLBlue), yellow, brown) 1&quot;&gt;<br />
-          &emsp;&lt;img src=&quot;<b>your_image_here</b>&quot; class=&quot;responsiveImg&quot; /&gt; &lt;/div&gt;<br />
-        </i>
+        <p>
+          <i>(Photo by <a style="color: white" href="https://unsplash.com/@joshua_j_woroniecki">Joshua Woroniecki</a> via Unsplash)</i>
+        </p>
+        <code class="codeBlock">&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;responsiveImg&quot; /&gt;</code>
       </div>
       <img
         class="banner"
         src="https://images.unsplash.com/photo-1614850715649-1d0106293bd1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
         alt="Unsplash"
-        style="margin-top: 20px"
+        style="margin-top: 20px; max-width: 1080px"
         loading="lazy"
       />
       <div>
@@ -254,7 +202,7 @@
           You can too, create a banner of a picture!<br />
           <i>(Photo by <a style="color: white" href="https://unsplash.com/@gradienta">GRADIENTA</a> via Unsplash)</i><br />
         </p>
-        <div class="normalBorder alignCenter">&lt;img class=&quot;banner&quot; src=&quot;you_image_here&quot;&gt;</div>
+        <code class="codeBlock">&lt;img class=&quot;banner&quot; src=&quot;you_image_here&quot;&gt;</code>
       </div>
     </div>
 
@@ -269,73 +217,76 @@
         </tr>
         <tr>
           <td class="d0">Hell-'O-World!</td>
-          <td>class=d0</td>
+          <td><code>class=d0</code></td>
         </tr>
         <tr>
           <td class="d1">Hell-'O-World!</td>
-          <td>class=d1</td>
+          <td><code>class=d1</code></td>
         </tr>
         <tr>
           <td class="d2">Hell-'O-World!</td>
-          <td>class=d2</td>
+          <td><code>class=d2</code></td>
         </tr>
         <tr>
           <td class="d3">Hell-'O-World!</td>
-          <td>class=d3</td>
+          <td><code>class=d3</code></td>
         </tr>
         <tr>
           <td class="d4">Hell-'O-World!</td>
-          <td>class=d4</td>
+          <td><code>class=d4</code></td>
         </tr>
         <tr>
           <td class="d5">Hell-'O-World!</td>
-          <td>class=d5</td>
+          <td><code>class=d5</code></td>
         </tr>
         <tr>
           <th colspan="2">Responsive</th>
         </tr>
         <tr>
           <td class="R0">Hell-'O-World!</td>
-          <td>class=R0</td>
+          <td><code>class=R0</code></td>
         </tr>
         <tr>
           <td class="R1">Hell-'O-World!</td>
-          <td>class=R1</td>
+          <td><code>class=R1</code></td>
         </tr>
         <tr>
           <td class="R2">Hell-'O-World!</td>
-          <td>class=R2</td>
+          <td><code>class=R2</code></td>
         </tr>
         <tr>
           <td class="R3">Hell-'O-World!</td>
-          <td>class=R3</td>
+          <td><code>class=R3</code></td>
         </tr>
         <tr>
           <td class="R4">Hell-'O-World!</td>
-          <td>class=R4</td>
+          <td><code>class=R4</code></td>
         </tr>
         <tr>
           <td class="R5">Hell-'O-World!</td>
-          <td>class=R5</td>
+          <td><code>class=R5</code></td>
         </tr>
       </table>
+    </div>
 
+    <div class="margin300">
       <!-- Codes -->
       <h2 style="margin-top: 5rem">● Codes</h2>
       <p>
-        Look this code block! Sleek right?<br />
-        you can use the <b>class="codeBlock"</b><br />
-        combined with &lt;code&gt;.
+        Notice all the code block above? You can use-<br />
+        <b><code>&lt;code class=&quot;codeBlock&quot;&gt; ... &lt;/code&gt;</code></b> <br />
+        to contain your code and display it better
       </p>
-      <code class="codeBlock"> $netstat -lnp | grep 80 </code>
+      <code class="codeBlock"> $> netstat -lnp | grep 80 </code>
       <p>
-        Or use the <b>class="codeDiv"</b><br />
-        combined with &lt;div&gt;,<br />
-        so you can specify the size.
+        Or by using- <br />
+        <b><code>&lt;div class=&quot;codeDiv&quot;&gt; ... &lt;/div&gt;</code></b> <br />
+        you can specify the size.
       </p>
       <div class="codeDiv" style="height: fit-content; width: fit-content">
-        $> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi aspernatur praesentium, unde nesciunt quis laudantium laborum necessitatibus provident ea sint eveniet expedita repellendus aliquid. Officia at in voluptatum tempora
-        culpa distinctio atque eius, blanditiis laboriosam,
+        $> cat lorem.txt<br />
+        <br />$> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi aspernatur praesentium, unde nesciunt quis laudantium laborum necessitatibus provident ea sint eveniet expedita repellendus aliquid. Officia at in voluptatum
+        tempora culpa distinctio atque eius, blanditiis laboriosam,
         <mark
           >ipsum quas repellendus nihil esse nesciunt maiores odit! Ab illo dicta nemo vero quod officia officiis sed repellat saepe necessitatibus iusto, exercitationem et nulla corporis molestiae laudantium earum. Earum maxime ad numquam,
           dolorum similique eius eum officiis repellat modi nobis cupiditate sapiente quam saepe. Autem mollitia soluta velit esse neque nihil provident sunt corporis labore laboriosam ipsa consectetur, iure doloribus et eveniet molestiae
@@ -343,10 +294,8 @@
         >
         Molestias sapiente dolorem dolor perspiciatis, asperiores quas porro dignissimos non fugit. Quo voluptates, magnam delectus cum explicabo perferendis saepe pariatur, rerum asperiores repellendus commodi ea quidem debitis reiciendis
         atque doloremque beatae non veritatis magni numquam, natus aliquid iusto. Esse sint quod nobis assumenda magnam consequuntur vitae, ipsa earum et, soluta veniam. Saepe est magni minus porro soluta quos, iusto neque commodi fugiat
-        vel non voluptatem laborum, atque ex. Vero at rerum repellat quia minus nemo veniam nihil repudiandae optio voluptatibus in consequuntur atque, facere qui nostrum, ipsum illo non omnis et pariatur. Corrupti ea veritatis nemo aliquam
-        tempora numquam natus unde, optio eaque iusto recusandae omnis ut praesentium velit exercitationem necessitatibus quidem maiores, et sequi! Harum, tenetur, eligendi dolorem, ea numquam rerum deleniti culpa minus assumenda
-        consectetur sed eius atque dolores architecto aliquam quaerat eum quia accusantium ipsam ut reprehenderit facere fuga repellat. Ab asperiores veritatis magni iure et saepe hic optio eligendi ut quidem quod exercitationem minima
-        officia nam officiis possimus eaque facilis, illum quibusdam amet! Facere molestiae a error esse, beatae quasi doloremque assumenda est tempore quo tempora sit labore sequi! Et tenetur obcaecati libero quos ab!_
+        vel non voluptatem laborum, atque ex. <br />
+        <br />$> _
       </div>
     </div>
 
@@ -358,12 +307,13 @@
         Try &lt;mark&gt; tag, comes with 4 highlighting colors classes
       </p>
       <div>
-        <mark class="limeMarker">&nbsp;limeMarker&nbsp;</mark>, <mark class="redMarker">&nbsp;redMarker&nbsp;</mark>, <mark class="greenMarker">&nbsp;greenMarker&nbsp;</mark>
-        <mark class="pinkMarker">&nbsp;pinkMarker&nbsp;</mark>
+        <mark class="limeMarker">&nbsp;<code>class="limeMarker"</code>&nbsp;</mark>, <mark class="redMarker">&nbsp;<code>class="redMarker"</code>&nbsp;</mark>, <mark class="greenMarker">&nbsp;<code>class="greenMarker"</code>&nbsp;</mark>
+        <mark class="pinkMarker">&nbsp;<code>class="pinkMarker"</code>&nbsp;</mark>,
       </div>
       <div>
-        ,<mark class="limeSMarker">&nbsp;limeSMarker&nbsp;</mark>, <mark class="redSMarker">&nbsp;redSMarker&nbsp;</mark>, <mark class="greenSMarker">&nbsp;greenSMarker&nbsp;</mark>, and
-        <mark class="pinkSMarker">&nbsp;pinkSMarker!&nbsp;</mark>
+        <mark class="limeSMarker">&nbsp;<code>class="limeSMarker"</code>&nbsp;</mark>, <mark class="redSMarker">&nbsp;<code>class="redSMarker"</code>&nbsp;</mark>,
+        <mark class="greenSMarker">&nbsp;<code>class="greenSMarker"</code>&nbsp;</mark>, and
+        <mark class="pinkSMarker">&nbsp;<code>class="pinkSMarker"</code>!&nbsp;</mark>
       </div>
       <div style="margin-top: 8px">
         <i style="color: gray">info: the 'S' stands for 'Soft'</i>
@@ -374,10 +324,10 @@
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Glowing Text</h2>
       <p>
-        It made text glows Simply use the <b class="glow">class="glow"</b> to start to make a text glow <br />
+        It made text glows Simply use the <code><b class="glow">class="glow"</b></code> to make a text glow.<br />
         No, it doesn't animated, if appear so, you should probably take a break <br />
         <br />
-        It comes with multiple light intensity <br />
+        It comes with multiple light intensities:
         <br /><i class="glow10">class="glow10"</i>
         <i class="glow20">&nbsp; class="glow20"</i>
         <i class="glow30">&nbsp; class="glow30"</i>
@@ -396,20 +346,17 @@
       <h2 style="margin-top: 5rem">● On Scroll Animation</h2>
       <p>
         There's a little fade in animation you can use while scrolling. <br />
-        Just add the <b>class=&quot;reveal&quot;</b> to an image desired. <br />
-        Make sure to include <b>&lt;script&gt; initanima(); &lt;/script&gt;</b> <br />
-        in the end of your code
+        Just add the <code><b>class=&quot;reveal&quot;</b></code> to an image desired. <br />
       </p>
-      <div class="alignCenter" style="margin-top: 3rem">
+      <div class="alignCenter2 reveal" style="margin-top: 3rem">
         <img
-          class="reveal responsiveImg"
+          class="responsiveImg"
           src="https://images.unsplash.com/photo-1618614944895-fc409a83ad80?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
           alt="Unsplash"
           style="max-width: 520px"
           loading="lazy"
         />
-      </div>
-      <div class="alignCenter reveal">
+        <br />
         <i>(Photo by <a style="color: white" href="https://unsplash.com/@terrylknox">TERRYLKNOX</a> via Unsplash)</i>
       </div>
     </div>
@@ -417,7 +364,9 @@
     <!-- Listing -->
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Listing</h2>
-      <p>Lists are better formatted with the class <b>class=&quot;list&quot;</b> and <b>class=&quot;descList&quot;</b> to describe the lists.</p>
+      <p>
+        Lists are better formatted with the class <code><b>class=&quot;list&quot;</b></code> and <code><b>class=&quot;descList&quot;</b></code> to describe the lists.
+      </p>
       <div style="display: flex">
         <div></div>
         <div class="codeDiv" style="width: 400px; padding: 25px">
@@ -438,9 +387,9 @@
         <div style="margin-top: -5px; margin-left: 25px">
           <p>The result will be like the following</p>
           <dl class="descList">
-            <li><a href="#">Category 1</a></li>
+            <dt><a href="#">Category 1</a></dt>
             <dd><a href="#">Subcat 1.2</a></dd>
-            <li><a href="#">Category 2</a></li>
+            <dt><a href="#">Category 2</a></dt>
             <dd><a href="#">Subcat 2.2</a></dd>
           </dl>
           <ul class="list">
@@ -458,14 +407,21 @@
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Alignment</h2>
       <p>
-        Alignment has never been so easy. just add <b>class=&quot;alignLeft&quot;</b>, <br />
-        <b>class=&quot;alignCenter&quot;</b>, or <b>class=&quot;alignRight&quot;</b> to a &lt;div&gt; tag
+        Alignment has never been so easy. just add <code><b>class=&quot;alignLeft&quot;</b></code
+        >, <br />
+        <code><b>class=&quot;alignCenter&quot;</b></code
+        >, or <code><b>class=&quot;alignRight&quot;</b></code> to a &lt;div&gt; tag
       </p>
-      <div>
-        <p>
-          See the Dark rectangle in the Right?<br />
-          we made it aligned right with the class! <br />
-        </p>
+      <div style="display: flex">
+        <div class="alignLeft pinkMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignLeft"</code>&nbsp;</div>
+        <div class="alignCenter pinkMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignCenter"</code>&nbsp;</div>
+        <div class="alignRight pinkMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignRight"</code>&nbsp;</div>
+      </div>
+      <p>Or if it just somehow doesn't work, just use the other one...</p>
+      <div style="display: flex">
+        <div class="alignLeft2 redMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignLeft2"</code>&nbsp;</div>
+        <div class="alignCenter2 redMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignCenter2"</code>&nbsp;</div>
+        <div class="alignRight2 redMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignRight2"</code>&nbsp;</div>
       </div>
     </div>
 
@@ -484,10 +440,8 @@
           >
             <i class="darkCutout d0 alignCenter">WINTER</i>
           </div>
-          <p class="textAlignCenter">
-            class="darkCutout" <br />
-            <i>(Photo by <a style="color: white" href="https://unsplash.com/@ernesta_vala">Ernesta Vala</a> via Unsplash)</i>
-          </p>
+          <p class="textAlignCenter"><code class="codeBlock">class="darkCutout"</code> <br /></p>
+          <i>(Photo by <a style="color: white" href="https://unsplash.com/@ernesta_vala">Ernesta Vala</a> via Unsplash)</i>
         </div>
         <div>
           <div
@@ -499,10 +453,8 @@
           >
             <i class="cutout d0 alignCenter">WARMER</i>
           </div>
-          <p style="margin-left: 3ch" class="textAlignCenter">
-            class="cutout" <br />
-            <i>(Photo by <a style="color: white" href="https://unsplash.com/@jeremybishop">Jeremy Bishop</a> via Unsplash)</i>
-          </p>
+          <p style="margin-left: 3ch" class="textAlignCenter"><code class="codeBlock">class="cutout"</code> <br /></p>
+          <i style="margin-left: 3.5ch">(Photo by <a style="color: white" href="https://unsplash.com/@jeremybishop">Jeremy Bishop</a> via Unsplash)</i>
         </div>
       </div>
     </div>
@@ -511,8 +463,12 @@
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Buttons</h2>
       <p>Just buttons that matches the theme, idk...</p>
-      <button class="button">class="button"</button>
-      <button class="darkButton">class="darkButton"</button>
+      <button class="button">
+        <code><b>class="button"</b></code>
+      </button>
+      <button class="darkButton">
+        <code><b>class="darkButton"</b></code>
+      </button>
     </div>
 
     <!-- Splash Screen -->
@@ -527,11 +483,37 @@
       </p>
     </div>
 
+    <div class="margin300">
+      <h2 style="margin-top: 5rem">● Image Carousel</h2>
+      <p>
+        <i>Photos via <a href="https://picsum.photos/" style="color: white">Lorem Picsum</a></i>
+      </p>
+      <div class="carousel">
+        <img src="https://picsum.photos/720/320?random=1" alt="" class="carousel-item" />
+        <img src="https://picsum.photos/720/320?random=2" alt="" class="carousel-item" />
+        <img src="https://picsum.photos/720/320?random=3" alt="" class="carousel-item" />
+      </div>
+      <p>
+        Displaying Album? <br />
+        Automatic Sliding Carousel can be simply <br />
+        added in a mere line of codes <br />
+      </p>
+      <div class="codeDiv">
+        &lt;div class=&quot;carousel&quot;&gt;<br />
+        &nbsp;&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;carousel-item&quot; /&gt;<br />
+        &nbsp;&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;carousel-item&quot; /&gt;<br />
+        &nbsp;&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;carousel-item&quot; /&gt;<br />
+        &lt;/div&gt;
+      </div>
+    </div>
+
     <!-- End -->
-    <div class="alignRight margin300" style="background-color: var(--DCod); width: 200px; height: 100px; text-align: center; padding: 10px">
+    <div class="alignRight2 margin300" style="background: #181818; width: 200px; height: 100px; text-align: center; padding: 15px; border-radius: 15px 15px 0px 0px">
       Another <s>Trash</s> <br />
       Made in struggle by <br />
       <a href="https://github.com/ARSTCreations" style="color: white">ARSTCreations</a>
     </div>
   </body>
+  <!-- <script src="experimental.js"></script> -->
+  <script src="domum.js"></script>
 </html>
