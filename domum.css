@@ -1,9 +1,10 @@
-/* COLORS */
-/* --DVoid: #0c080a;
+/* COLORS 
+--DVoid: #0c080a;
 --DCod: #181818;
 --DNero: #440000;
 --DGray: #212121;
---DCastro: #4c0027;
+--DGray2: #161b22;
+--BGGray2: #0d1117;
 --DMagenta: #1a1a40;
 --DRed: #3d3d3d;
 --DBlue: #270082;
@@ -11,20 +12,12 @@
 --DLGray: #aaaaaa;
 --DLPink: #fa58b6;
 --DBone: #e3dac9;
---DWhite: #ffffff; */
-
-/* THEMING
-.darkMode{
-
-}
-
-.lightMode{
-
-} */
+--DWhite: #ffffff;
+*/
 
 /* UNIVERSAL */
 html {
-  background-color: #4c0027;
+  background-color: #0d1117;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -415,14 +408,14 @@ code {
 .codeBlock {
   padding: 10px;
   border: 2px solid #181818;
-  background-color: #0c080a;
+  background-color: #161b22;
   border-radius: 15px;
 }
 .codeDiv {
   font-family: "Courier New", Courier, monospace;
   font-size: 11pt;
   border: 2px solid #181818;
-  background-color: #0c080a;
+  background-color: #161b22;
   border-radius: 15px;
   width: fit-content;
   height: 50%;
