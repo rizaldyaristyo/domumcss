@@ -21,6 +21,11 @@ html {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.darker {
+  background-color: #060606;
+  color: #ffffff;
+}
+
 body {
   margin: 0px;
 }
