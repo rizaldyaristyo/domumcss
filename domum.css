@@ -44,16 +44,19 @@ body {
   padding: 14px 16px;
   font-size: 17px;
   float: left;
-  display: block;
+  display: flex;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+}
+.navbar .navbar-logo {
+  align-items: center;
 }
 .navbar .icon {
   display: none;
 }
 .dropdown {
-  margin-top: 3px;
+  margin-top: 0px;
   float: left;
   overflow: hidden;
 }
@@ -92,6 +95,9 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.navbar .navbar-logo:hover {
+  background-color: #3d3d3d;
 }
 @media screen and (max-width: 800px) {
   .navbar a:not(:first-child),
@@ -142,7 +148,7 @@ body {
 }
 
 /* FRAME BORDER */
-.gradientBorder {
+.gradient-border {
   width: fit-content;
   height: fit-content;
   place-items: center;
@@ -150,7 +156,7 @@ body {
   padding: 1rem;
   border-image: linear-gradient(-45deg, #1a1a40, #181818) 1;
 }
-.gradientBorderRev {
+.gradient-border-rev {
   width: fit-content;
   height: fit-content;
   place-items: center;
@@ -158,7 +164,7 @@ body {
   padding: 1rem;
   border-image: linear-gradient(45deg, #1a1a40, #181818) 1;
 }
-.normalBorder {
+.normal-border {
   width: fit-content;
   height: fit-content;
   place-items: center;
@@ -221,78 +227,78 @@ body {
 }
 
 /* SIDE BAR */
-.sideBar {
+.side-bar {
   display: flex;
 }
-.leftBar {
+.left-bar {
   width: 13vw;
   padding: 1rem;
 }
-.rightBody {
+.right-body {
   width: 87vw;
   padding: 1rem;
 }
 
 @media only screen and (max-width: 1350px) {
-  .leftBar {
+  .left-bar {
     width: 25vw;
   }
-  .rightBody {
+  .right-body {
     width: 75vw;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .leftBar {
+  .left-bar {
     width: 35vw;
   }
-  .rightBody {
+  .right-body {
     width: 65vw;
   }
 }
 @media only screen and (max-width: 500px) {
-  .leftBar {
+  .left-bar {
     width: 45vw;
   }
-  .rightBody {
+  .right-body {
     width: 55vw;
   }
 }
 
 /* ALIGNMENT */
-.alignCenter {
+.align-center {
   margin: auto;
   margin-left: auto;
   margin-right: auto;
 }
-.alignCenter2 {
+.align-center2 {
   margin: auto;
   padding: 10px;
   text-align: center;
 }
-.alignLeft {
+.align-left {
   margin-left: 0;
   margin-right: auto;
 }
-.alignRight {
+.align-right {
   margin-left: auto;
   margin-right: 0;
 }
-.alignLeft2 {
+.align-left2 {
   text-align: start;
   float: left;
 }
-.alignRight2 {
+.align-right2 {
   text-align: end;
   float: right;
 }
-.textAlignCenter {
+.text-align-center {
   text-align: center;
 }
-.textAlignStart {
+.text-align-start {
   text-align: start;
 }
-.textAlignEnd {
+.text-align-end {
   text-align: end;
 }
 
@@ -301,44 +307,44 @@ mark {
   color: #0c080a;
   background: rgba(255, 255, 0, 1);
 }
-.limeMarker {
+.lime-marker {
   color: #0c080a;
   background: rgba(0, 255, 0, 1);
 }
-.redMarker {
+.red-marker {
   color: #ffffff;
   background: rgba(255, 0, 0, 1);
 }
-.greenMarker {
+.green-marker {
   color: #0c080a;
   background: rgba(0, 128, 0, 1);
 }
-.pinkMarker {
+.pink-marker {
   color: #0c080a;
   background: rgba(255, 192, 203, 1);
 }
-.SMarker {
+.s-marker {
   color: #ffffff;
   background: rgba(255, 255, 0, 0.5);
 }
-.limeSMarker {
+.limes-marker {
   color: #ffffff;
   background: rgba(0, 255, 0, 0.5);
 }
-.redSMarker {
+.reds-marker {
   color: #ffffff;
   background: rgba(255, 0, 0, 0.5);
 }
-.greenSMarker {
+.greens-marker {
   color: #ffffff;
   background: rgba(0, 128, 0, 0.5);
 }
-.pinkSMarker {
+.pinks-marker {
   color: #ffffff;
   background: rgba(255, 192, 203, 0.5);
 }
 .cutout,
-.lightCutout {
+.light-cutout {
   background-color: white;
   color: black;
   font-weight: bold;
@@ -349,7 +355,7 @@ mark {
   left: 50%;
   mix-blend-mode: screen;
 }
-.darkCutout {
+.dark-cutout {
   background-color: black;
   color: white;
   font-weight: bold;
@@ -360,7 +366,7 @@ mark {
   left: 50%;
   mix-blend-mode: multiply;
 }
-.cutoutImg {
+.cutout-img {
   background-size: cover;
   padding: 20px;
   width: fit-content;
@@ -407,13 +413,13 @@ mark {
 code {
   font-size: 10pt;
 }
-.codeBlock {
+.code-block {
   padding: 10px;
   border: 2px solid #181818;
   background-color: #161b22;
   border-radius: 15px;
 }
-.codeDiv {
+.code-div {
   font-family: "Courier New", Courier, monospace;
   font-size: 11pt;
   border: 2px solid #181818;
@@ -426,7 +432,7 @@ code {
 
 /* LISTING */
 .list {
-  margin-left: -4.4ch;
+  margin-inline-start: -3.2ch;
 }
 .list li,
 .list li a {
@@ -434,29 +440,29 @@ code {
   color: white;
   text-decoration: none;
 }
-.descList {
-  /* margin-left: 20px; */
+.desc-list {
+  margin-inline-start: 2ch;
   margin-top: -5px;
 }
-.descList dt,
-.descList dd,
-.descList dt a,
-.descList dd a {
+.desc-list dt,
+.desc-list dd,
+.desc-list dt a,
+.desc-list dd a {
   margin-top: 10px;
   margin-bottom: 5px;
   color: white;
   text-decoration: none;
 }
-.descList dd a,
-.descList dt a {
+.desc-list dd a,
+.desc-list dt a {
   padding-inline-start: 0.6ch;
 }
-.descList dt {
+.desc-list dt {
   display: list-item;
   /* list-style-type: "⫸"; */
   list-style-type: "⇀";
 }
-.descList dd {
+.desc-list dd {
   display: list-item;
   /* list-style-type: "⪢"; */
   list-style-type: "⇀";
@@ -481,10 +487,10 @@ code {
   color: green;
 }
 
-.descList dt::marker {
+.desc-list dt::marker {
   color: limegreen;
 }
-.descList dd::marker {
+.desc-list dd::marker {
   color: green;
 }
 
@@ -505,16 +511,16 @@ code {
 }
 
 /* IMAGE HANDLING */
-.responsiveImg {
+.responsive-img {
   width: 100%;
   max-width: inherit;
 }
-.responsiveImg2 {
+.responsive-img2 {
   width: 100%;
   max-width: inherit;
 }
 @media only screen and (max-width: 1000px) {
-  .responsiveImg2 {
+  .responsive-img2 {
     width: 70%;
     max-width: 70%;
   }
@@ -533,7 +539,7 @@ code {
   opacity: 0;
   transition: 1s all ease;
 }
-.reveal.showReveal {
+.reveal.show-reveal {
   transform: translateY(0);
   opacity: 1;
 }
@@ -573,7 +579,7 @@ code {
 
 /* BUTTONS */
 .button,
-.lightButton {
+.light-button {
   background-color: #ffffff;
   border: none;
   color: #0c080a;
@@ -587,11 +593,11 @@ code {
   border-radius: 4px;
 }
 .button:hover,
-.lightButton:hover {
+.light-button:hover {
   background-color: #a1a1a1;
   transition: 0.7s;
 }
-.darkButton {
+.dark-button {
   background-color: #0c080a;
   border: none;
   color: #ffffff;
@@ -604,13 +610,13 @@ code {
   cursor: pointer;
   border-radius: 4px;
 }
-.darkButton:hover {
+.dark-button:hover {
   background-color: #242424;
   transition: 0.7s;
 }
 
 /* SPLASH SCREEN */
-.splashScreen {
+.splash-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -625,11 +631,11 @@ code {
   animation: fadeOut 1s ease-out forwards;
   animation-delay: 1.4s;
 }
-.splashScreen * {
+.splash-screen * {
   opacity: 0;
-  animation: fadeIn 0.6s ease-in forwards;
+  animation: fade-in 0.6s ease-in forwards;
 }
-@keyframes fadeIn {
+@keyframes fade-in {
   to {
     opacity: 1;
   }

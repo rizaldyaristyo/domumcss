@@ -1,5 +1,5 @@
 function topnavbar() {
-  var x = document.getElementById("navBar");
+  var x = document.getElementById("navbar");
   if (x.className === "navbar") x.className += " responsive";
   else x.className = "navbar";
 }
@@ -9,8 +9,8 @@ function initanima() {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
     var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) reveals[i].classList.add("showReveal");
-    else reveals[i].classList.remove("showReveal");
+    if (elementTop < windowHeight - elementVisible) reveals[i].classList.add("show-reveal");
+    else reveals[i].classList.remove("show-reveal");
   }
 }
 initanima();

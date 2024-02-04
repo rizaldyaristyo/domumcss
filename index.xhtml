@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" class="darker">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,17 +18,17 @@
       }
     }
   </style>
-  <div class="splashScreen">
+  <div class="splash-screen">
     <div>
       <text class="d1" style="margin-right: -9px"> "domumCSS"</text>
-      - tenebrisV1.1 -
+      - tenebrisV1.2 -
     </div>
   </div>
   <body style="margin: 20px">
     <div align="center">
       <div>
         <text class="d1" style="margin-right: -9px"> "domumCSS"</text>
-        - tenebrisV1.1 -
+        - tenebrisV1.2 -
       </div>
       <p class="glow">Sharing the ease of dark</p>
       <i style="color: gray">
@@ -38,16 +38,26 @@
       </i>
     </div>
     <!-- Deployment -->
-    <div class="alignCenter2" style="margin-bottom: 50px; margin-top: 1rem">
+    <div class="align-center2" style="margin-bottom: 50px; margin-top: 1rem">
       <h2>● Deployment</h2>
-      <h3 class="textAlignCenter">- Once Deployed, your web goes Dark Mode -</h3>
+      <h3 class="text-align-center">- Once Deployed, your web goes Dark Mode -</h3>
       <p>
         <br /><b>domumCSS via <a href="https://statically.io/" style="color: white">Statically</a> ⚡</b><br /><br />
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.css&quot; /&gt;<br />
-        &lt;script src=&quot;https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
+        <div class="code-div align-center">
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.css&quot; /&gt;<br />
+          <br />
+          (your code here)<br />
+          <br />
+          &lt;script src=&quot;https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
+        </div>
         <br /><b>domumCSS via <a href="https://github.com/ARSTCreations/domumcss" style="color: white">GitHub</a> 🐱</b><br /><br />
-        &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css&quot; /&gt;<br />
-        &nbsp;&nbsp;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
+        <div class="code-div align-center">
+          &nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.css&quot; /&gt;<br />
+          <br />
+          (your code here)<br />
+          <br />
+          &nbsp;&nbsp;&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ARSTCreations/domumcss@main/domum.min.js&quot;&gt;&lt;/script&gt;<br />
+        </div>
         <br /><b><i style="color: white">(Deprecated) </i><strike style="color: gray">domumCSS CDNJSDelivr Convert 🛡 </strike><i style="color: white">&nbsp;(Not Caching)</i></b>
         <strike style="color: gray">
           <br /><br />
@@ -62,8 +72,8 @@
       <h2>● Top Navigation Bar (navbar)</h2>
       <div>
         <h3>With Logo</h3>
-        <div class="navbar" id="navBar" style="max-width: 800px; margin: auto">
-          <a href="#"><img src="" alt="domumCSS" /></a>
+        <div class="navbar" id="navbar" style="max-width: 800px; margin: auto">
+          <a href="#" class="navbar-logo"><img src="" alt="domumCSS" /></a>
           <a href="#">Home</a>
           <a href="#">Menu 2</a>
           <a href="#">Menu 3</a>
@@ -81,8 +91,8 @@
       </div>
     </div>
     <br />
-    <div class="codeDiv alignCenter">
-      &lt;div class=&quot;navbar&quot; id=&quot;navBar&quot; style=&quot;max-width: 800px; margin: auto&quot;&gt;<br />
+    <div class="code-div align-center">
+      &lt;div class=&quot;navbar&quot; id=&quot;navbar&quot; style=&quot;max-width: 800px; margin: auto&quot;&gt;<br />
       &nbsp;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;set-your-image-url-here&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;<br />
       &nbsp;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;<br />
       &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;<br />
@@ -103,7 +113,7 @@
     <div style="text-align: center">
       <div style="margin-left: 5px">
         <h3>Without Logo</h3>
-        <div class="navbar" id="navBar" style="max-width: 800px; margin: auto">
+        <div class="navbar" id="navbar" style="max-width: 800px; margin: auto">
           <a href="#" class="active">Home</a>
           <a href="#">Menu 2</a>
           <a href="#">Menu 3</a>
@@ -121,8 +131,8 @@
       </div>
     </div>
     <br />
-    <div class="codeDiv alignCenter">
-      &lt;div class=&quot;navbar&quot; id=&quot;navBar&quot; style=&quot;max-width: 800px; margin: auto&quot;&gt;<br />
+    <div class="code-div align-center">
+      &lt;div class=&quot;navbar&quot; id=&quot;navbar&quot; style=&quot;max-width: 800px; margin: auto&quot;&gt;<br />
       &nbsp;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;<br />
       &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;<br />
       &nbsp;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;<br />
@@ -140,7 +150,7 @@
     </div>
 
     <!-- Sidebar Layouting -->
-    <div style="margin-top: 5rem" class="alignCenter2">
+    <div style="margin-top: 5rem" class="align-center2">
       <div>
         <h2>● Side Bar Layouting</h2>
         <p>
@@ -150,14 +160,14 @@
         <iframe src="etcetera/sidebar.html" frameborder="0" style="min-height: 100px; max-width: 720px; width: 100%; height: 100%"></iframe>
       </div>
     </div>
-    <div class="codeDiv alignCenter">
-      &lt;body class=&quot;sideBar&quot;&gt;<br />
-      &nbsp;&lt;div class=&quot;leftBar&quot; style=&quot;background-color: #0c080a&quot;&gt;<br />
+    <div class="code-div align-center">
+      &lt;body class=&quot;side-bar&quot;&gt;<br />
+      &nbsp;&lt;div class=&quot;left-bar&quot; style=&quot;background-color: #0c080a&quot;&gt;<br />
       &nbsp;&nbsp;&lt;div class=&quot;barContent&quot;&gt;<br />
       &nbsp;&nbsp;&nbsp;&lt;div class=&quot;d2&quot;&gt;Lorem ipsum, dolor sit amet consectetur adipisicing.&lt;/div&gt;<br />
       &nbsp;&nbsp;&lt;/div&gt;<br />
       &nbsp;&lt;/div&gt;<br />
-      &nbsp;&lt;div class=&quot;rightBody&quot; style=&quot;background-color: #3d3d3d&quot;&gt;<br />
+      &nbsp;&lt;div class=&quot;right-body&quot; style=&quot;background-color: #3d3d3d&quot;&gt;<br />
       &nbsp;&nbsp;&lt;div class=&quot;d2&quot;&gt;Dolor sit amet consectetur adipisicing elit.&lt;/div&gt;<br />
       &nbsp;&lt;/div&gt;<br />
       &lt;/body&gt;
@@ -166,20 +176,20 @@
     <!-- Frame Border -->
     <div class="margin300" style="text-align: center">
       <h2 style="margin-top: 5rem">● Frame Borders</h2>
-      <div class="gradientBorder alignCenter"><code>&lt;div class=&quot;gradientBorder&quot;&gt;Gradient Border Frame&lt;/div&gt;</code></div>
-      <div class="gradientBorderRev alignCenter" style="margin-top: 20px"><code>&lt;div class=&quot;gradientBorderRev&quot; &gt;Gradient Border Frame&lt;/div&gt;</code></div>
-      <div class="normalBorder alignCenter" style="margin-top: 20px"><code>&lt;div class=&quot;normalBorder&quot; &gt;Gradient Border Frame&lt;/div&gt;</code></div>
+      <div class="gradient-border align-center"><code>&lt;div class=&quot;gradient-border&quot;&gt;Gradient Border Frame&lt;/div&gt;</code></div>
+      <div class="gradient-border-rev align-center" style="margin-top: 20px"><code>&lt;div class=&quot;gradient-border-rev&quot; &gt;Gradient Border Frame&lt;/div&gt;</code></div>
+      <div class="normal-border align-center" style="margin-top: 20px"><code>&lt;div class=&quot;normal-border&quot; &gt;Gradient Border Frame&lt;/div&gt;</code></div>
       <p style="color: gray; font-style: italic">you can always override the colors of the border by using the border-color property</p>
     </div>
 
     <!-- Images -->
     <div class="margin300" style="text-align: center">
       <h2 style="margin-top: 5rem">● Responisve Image</h2>
-      <div class="alignCenter" style="margin-top: 20px; max-width: 720px">
+      <div class="align-center" style="margin-top: 20px; max-width: 720px">
         <img
           src="https://images.unsplash.com/photo-1650159809523-2d79505fe96d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
           alt="Unsplash"
-          class="responsiveImg"
+          class="responsive-img"
           loading="lazy"
         />
         <p>
@@ -187,7 +197,7 @@
           Try Resizing your window! <br />
           <i>(Photo by <a style="color: white" href="https://unsplash.com/@joshua_j_woroniecki">Joshua Woroniecki</a> via Unsplash)</i>
         </p>
-        <code class="codeBlock">&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;responsiveImg&quot; /&gt;</code>
+        <code class="code-block">&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;responsive-img&quot; /&gt;</code>
       </div>
       <br />
       <h2 style="margin-top: 5rem">● Banner Image</h2>
@@ -203,7 +213,7 @@
           You can too, create a banner of a picture!<br />
           <i>(Photo by <a style="color: white" href="https://unsplash.com/@gradienta">GRADIENTA</a> via Unsplash)</i><br />
         </p>
-        <code class="codeBlock">&lt;img class=&quot;banner&quot; src=&quot;you_image_here&quot;&gt;</code>
+        <code class="code-block">&lt;img class=&quot;banner&quot; src=&quot;you_image_here&quot;&gt;</code>
       </div>
     </div>
 
@@ -211,7 +221,7 @@
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Typography</h2>
       <p>You can use these classes instead of the conventional h1, h2, h3, etc.</p>
-      <table class="table alignCenter2">
+      <table class="table align-center2">
         <tr>
           <th>Display</th>
           <th>Class</th>
@@ -275,16 +285,16 @@
       <h2 style="margin-top: 5rem">● Codes</h2>
       <p>
         Notice all the code block above? You can use-<br />
-        <b><code>&lt;code class=&quot;codeBlock&quot;&gt; ... &lt;/code&gt;</code></b> <br />
+        <b><code>&lt;code class=&quot;code-block&quot;&gt; ... &lt;/code&gt;</code></b> <br />
         to contain your code and display it better
       </p>
-      <code class="codeBlock"> $> netstat -lnp | grep 80 </code>
+      <code class="code-block"> $> netstat -lnp | grep 80 </code>
       <p>
         Or by using- <br />
-        <b><code>&lt;div class=&quot;codeDiv&quot;&gt; ... &lt;/div&gt;</code></b> <br />
+        <b><code>&lt;div class=&quot;code-div&quot;&gt; ... &lt;/div&gt;</code></b> <br />
         you can specify the size.
       </p>
-      <div class="codeDiv" style="height: fit-content; width: fit-content">
+      <div class="code-div" style="height: fit-content; width: fit-content">
         $> cat lorem.txt<br />
         <br />$> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi aspernatur praesentium, unde nesciunt quis laudantium laborum necessitatibus provident ea sint eveniet expedita repellendus aliquid. Officia at in voluptatum
         tempora culpa distinctio atque eius, blanditiis laboriosam,
@@ -308,13 +318,13 @@
         Try &lt;mark&gt; tag, comes with 4 highlighting colors classes
       </p>
       <div>
-        <mark class="limeMarker">&nbsp;<code>class="limeMarker"</code>&nbsp;</mark>, <mark class="redMarker">&nbsp;<code>class="redMarker"</code>&nbsp;</mark>, <mark class="greenMarker">&nbsp;<code>class="greenMarker"</code>&nbsp;</mark>
-        <mark class="pinkMarker">&nbsp;<code>class="pinkMarker"</code>&nbsp;</mark>,
+        <mark class="lime-marker">&nbsp;<code>class="lime-marker"</code>&nbsp;</mark>, <mark class="red-marker">&nbsp;<code>class="red-marker"</code>&nbsp;</mark>, <mark class="green-marker">&nbsp;<code>class="green-marker"</code>&nbsp;</mark>
+        <mark class="pink-marker">&nbsp;<code>class="pink-marker"</code>&nbsp;</mark>,
       </div>
       <div>
-        <mark class="limeSMarker">&nbsp;<code>class="limeSMarker"</code>&nbsp;</mark>, <mark class="redSMarker">&nbsp;<code>class="redSMarker"</code>&nbsp;</mark>,
-        <mark class="greenSMarker">&nbsp;<code>class="greenSMarker"</code>&nbsp;</mark>, and
-        <mark class="pinkSMarker">&nbsp;<code>class="pinkSMarker"</code>!&nbsp;</mark>
+        <mark class="limes-marker">&nbsp;<code>class="limes-marker"</code>&nbsp;</mark>, <mark class="reds-marker">&nbsp;<code>class="reds-marker"</code>&nbsp;</mark>,
+        <mark class="greens-marker">&nbsp;<code>class="greens-marker"</code>&nbsp;</mark>, and
+        <mark class="pinks-marker">&nbsp;<code>class="pinks-marker"</code>!&nbsp;</mark>
       </div>
       <div style="margin-top: 8px">
         <i style="color: gray">info: the 'S' stands for 'Soft'</i>
@@ -349,16 +359,16 @@
         There's a little fade in animation you can use while scrolling. <br />
         Just add the <code><b>class=&quot;reveal&quot;</b></code> to an image desired. <br />
       </p>
-      <div class="alignCenter2 reveal" style="margin-top: 3rem">
+      <div class="align-center2 reveal" style="margin-top: 3rem">
         <img
-          class="responsiveImg"
+          class="responsive-img"
           src="https://images.unsplash.com/photo-1618614944895-fc409a83ad80?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
           alt="Unsplash"
           style="max-width: 520px"
           loading="lazy"
         />
       </div>
-      <div class="textAlignCenter" style="margin-top: 1rem">
+      <div class="text-align-center" style="margin-top: 1rem">
         <i>(Photo by <a style="color: white" href="https://unsplash.com/@terrylknox">TERRYLKNOX</a> via Unsplash)</i>
       </div>
     </div>
@@ -367,12 +377,12 @@
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Listing</h2>
       <p>
-        Lists are better formatted with the class <code><b>class=&quot;list&quot;</b></code> and <code><b>class=&quot;descList&quot;</b></code> to describe the lists.
+        Lists are better formatted with the class <code><b>class=&quot;list&quot;</b></code> and <code><b>class=&quot;desc-list&quot;</b></code> to describe the lists.
       </p>
       <div style="display: flex">
         <div></div>
-        <div class="codeDiv" style="width: 400px; padding: 25px">
-          &lt;dl class=&quot;descList&quot;&gt;<br />
+        <div class="code-div" style="width: 400px; padding: 25px">
+          &lt;dl class=&quot;desc-list&quot;&gt;<br />
           &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 1&lt;/a&gt;&lt;/li&gt;<br />
           &emsp;&lt;dd&gt;&lt;a href=&quot;#&quot;&gt;Subcat 1.2&lt;/a&gt;&lt;/dd&gt;<br />
           &emsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 2&lt;/a&gt;&lt;/li&gt;<br />
@@ -388,7 +398,7 @@
         </div>
         <div style="margin-top: -5px; margin-left: 25px">
           <p>The result will be like the following</p>
-          <dl class="descList">
+          <dl class="desc-list">
             <dt><a href="#">Category 1</a></dt>
             <dd><a href="#">Subcat 1.2</a></dd>
             <dt><a href="#">Category 2</a></dt>
@@ -409,21 +419,21 @@
     <div class="margin300">
       <h2 style="margin-top: 5rem">● Alignment</h2>
       <p>
-        Alignment has never been so easy. just add <code><b>class=&quot;alignLeft&quot;</b></code
+        Alignment has never been so easy. just add <code><b>class=&quot;align-left&quot;</b></code
         >, <br />
-        <code><b>class=&quot;alignCenter&quot;</b></code
-        >, or <code><b>class=&quot;alignRight&quot;</b></code> to a &lt;div&gt; tag
+        <code><b>class=&quot;align-center&quot;</b></code
+        >, or <code><b>class=&quot;align-right&quot;</b></code> to a &lt;div&gt; tag
       </p>
       <div style="display: flex">
-        <div class="alignLeft pinkMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignLeft"</code>&nbsp;</div>
-        <div class="alignCenter pinkMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignCenter"</code>&nbsp;</div>
-        <div class="alignRight pinkMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignRight"</code>&nbsp;</div>
+        <div class="align-left pink-marker" style="height: 30px; width: fit-content">&nbsp;<code>class="align-left"</code>&nbsp;</div>
+        <div class="align-center pink-marker" style="height: 30px; width: fit-content">&nbsp;<code>class="align-center"</code>&nbsp;</div>
+        <div class="align-right pink-marker" style="height: 30px; width: fit-content">&nbsp;<code>class="align-right"</code>&nbsp;</div>
       </div>
       <p>Or if it just somehow doesn't work, just use the other one...</p>
       <div style="display: flex">
-        <div class="alignLeft2 redMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignLeft2"</code>&nbsp;</div>
-        <div class="alignCenter2 redMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignCenter2"</code>&nbsp;</div>
-        <div class="alignRight2 redMarker" style="height: 30px; width: fit-content">&nbsp;<code>class="alignRight2"</code>&nbsp;</div>
+        <div class="align-left2 red-marker" style="height: 30px; width: fit-content">&nbsp;<code>class="align-left2"</code>&nbsp;</div>
+        <div class="align-center2 red-marker" style="height: 30px; width: fit-content">&nbsp;<code>class="align-center2"</code>&nbsp;</div>
+        <div class="align-right2 red-marker" style="height: 30px; width: fit-content">&nbsp;<code>class="align-right2"</code>&nbsp;</div>
       </div>
     </div>
 
@@ -437,34 +447,34 @@
       <div style="display: flex">
         <div>
           <div
-            class="cutoutImg"
+            class="cutout-img"
             style="background-image: url('https://images.unsplash.com/photo-1472983131032-23a243d662eb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1474&amp;q=80')"
           >
-            <i class="darkCutout d0 alignCenter">WINTER</i>
+            <i class="dark-cutout d0 align-center">WINTER</i>
           </div>
-          <p class="textAlignCenter"><code class="codeBlock">class="darkCutout"</code> <br /></p>
+          <p class="text-align-center"><code class="code-block">class="dark-cutout"</code> <br /></p>
           <i>(Photo by <a style="color: white" href="https://unsplash.com/@ernesta_vala">Ernesta Vala</a> via Unsplash)</i>
         </div>
         <div>
           <div
-            class="cutoutImg"
+            class="cutout-img"
             style="
               background-image: url('https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80');
               margin-left: 3ch;
             "
           >
-            <i class="cutout d0 alignCenter">WARMER</i>
+            <i class="cutout d0 align-center">WARMER</i>
           </div>
-          <p style="margin-left: 3ch" class="textAlignCenter"><code class="codeBlock">class="cutout"</code> <br /></p>
+          <p style="margin-left: 3ch" class="text-align-center"><code class="code-block">class="cutout"</code> <br /></p>
           <i style="margin-left: 3.5ch">(Photo by <a style="color: white" href="https://unsplash.com/@jeremybishop">Jeremy Bishop</a> via Unsplash)</i>
         </div>
       </div>
-      <div class="codeDiv" style="margin-top: 15px">
+      <div class="code-div" style="margin-top: 15px">
         &lt;div <br />
-        &nbsp;class=&quot;cutoutImg&quot; <br />
+        &nbsp;class=&quot;cutout-img&quot; <br />
         &nbsp;style=&quot;background-image: url(&#39;your-image-here&#39;)&quot; <br />
         &gt; <br />
-        &nbsp;&lt;i class=&quot; <mark>darkCutout/cutout</mark> d0 alignCenter&quot;&gt;WHATEVER&lt;/i&gt; <br />
+        &nbsp;&lt;i class=&quot; <mark>dark-cutout/cutout</mark> d0 align-center&quot;&gt;WHATEVER&lt;/i&gt; <br />
         &lt;/div&gt;
       </div>
     </div>
@@ -476,8 +486,8 @@
       <button class="button">
         <code><b>class="button"</b></code>
       </button>
-      <button class="darkButton">
-        <code><b>class="darkButton"</b></code>
+      <button class="dark-button">
+        <code><b>class="dark-button"</b></code>
       </button>
     </div>
 
@@ -489,7 +499,7 @@
         Missed it? Try to reload the page! <br />
         it's simply made by using div and a class! <br />
         <br />
-        <code class="codeBlock"> &lt;div class=&quot;splashScreen&quot;&gt; &lt;h1&gt;DomumCSS V1.0&lt;/h1&gt; &lt;/div&gt; </code>
+        <code class="code-block"> &lt;div class=&quot;splash-screen&quot;&gt; &lt;h1&gt;DomumCSS V1.0&lt;/h1&gt; &lt;/div&gt; </code>
       </p>
     </div>
 
@@ -509,7 +519,7 @@
         <img src="https://picsum.photos/720/320?random=2" alt="" class="carousel-item" />
         <img src="https://picsum.photos/720/320?random=3" alt="" class="carousel-item" />
       </div>
-      <div class="codeDiv" style="margin-top: 2rem">
+      <div class="code-div" style="margin-top: 2rem">
         &lt;div class=&quot;carousel&quot;&gt;<br />
         &nbsp;&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;carousel-item&quot; /&gt;<br />
         &nbsp;&lt;img src=&quot;your-image-here&quot; alt=&quot;&quot; class=&quot;carousel-item&quot; /&gt;<br />
@@ -534,7 +544,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora neque ipsam ullam ex nesciunt, iste a, quasi obcaecati dicta odio. Vel ex rem consequatur eius sapiente tempore corporis officia.</p>
         </div>
       </div>
-      <div class="codeDiv">
+      <div class="code-div">
         &lt;div class=&quot;card&quot;&gt; <br />
         &nbsp;&lt;img src=&quot;https://picsum.photos/320?random=1&quot; alt=&quot;Card Picture&quot; /&gt; <br />
         &nbsp;&lt;div class=&quot;card-content&quot;&gt; <br />
@@ -560,7 +570,7 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nostrum aperiam quisquam rem velit repudiandae iure, commodi dicta in tenetur!</p>
       </div>
       <button type="button" class="collapsible" style="margin-top: 1rem">Open to reveal code!</button>
-      <div class="collapsible-content">
+      <div class="collapsible-content code-div">
         <p>
           &lt;button type=&quot;button&quot; class=&quot;collapsible&quot;&gt;&quot;The&quot; Collapsible&lt;/button&gt;<br />
           &lt;div class=&quot;collapsible-content&quot;&gt;<br />
@@ -571,12 +581,11 @@
     </div>
 
     <!-- End -->
-    <div class="alignRight2 margin300" style="margin-top: 4rem; background: #181818; width: 200px; height: 100px; text-align: center; padding: 15px; border-radius: 15px 15px 0px 0px">
+    <div class="align-right2 margin300" style="margin-top: 4rem; background: #181818; width: 200px; height: 100px; text-align: center; padding: 15px; border-radius: 15px 15px 0px 0px">
       Another <s>Trash</s> <br />
       Made in struggle by <br />
       <a href="https://github.com/ARSTCreations" style="color: white">ARSTCreations</a>
     </div>
   </body>
-  <!-- <script src="experimental.js"></script> -->
   <script src="domum.js"></script>
 </html>
